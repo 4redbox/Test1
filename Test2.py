@@ -1,14 +1,15 @@
 """program to guess number"""
 import random
+
 print("Welcome to slver studios")
-username = raw_input("We need a funny name to address you: ")
+username = input("We need a funny name to address you: ")
 print('Aww...' + username + ', welcome')
 rnum = random.randint(1, 100)
-#print('rnum: ' + str(rnum))
+# print('rnum: ' + str(rnum))
 gotit = False
 
 while not gotit:
-    num = raw_input(username + " guess a number: ")
+    num = input(username + " guess a number: ")
     num = int(num)
 
     if num == rnum:
